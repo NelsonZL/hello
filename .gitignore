@@ -1,0 +1,27 @@
+# .gitignore —— 告诉 Git「这些文件不要管」
+#
+# 为什么需要它：有些文件不该进版本库。
+# 要么每台机器都会自己生成（比如 node_modules、日志），
+# 要么根本不该被人看到（比如含密码的 .env 文件）。
+# 一旦被 commit 进历史，就很难彻底撤回来了 —— 所以趁早写。
+
+# 日志和临时文件
+*.log
+*.tmp
+*.bak
+
+# 系统自动生成的垃圾文件
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# 依赖目录（每个人自己安装就行，没必要塞进仓库）
+node_modules/
+__pycache__/
+venv/
+
+# 重要：存放密钥、密码、Token 的文件，绝对不能提交
+.env
+.env.local
+*.pem
+*.key
