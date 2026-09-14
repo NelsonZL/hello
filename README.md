@@ -37,3 +37,9 @@ git diff              # 具体改了哪几行
 4. 然后 `git add .` → `git commit -m "改了 README"`
 
 当前进度：还没开始练习。
+
+开始联系
+
+更新
+
+
